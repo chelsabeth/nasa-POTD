@@ -5,7 +5,7 @@ import NasaGrid from "./Components/NasaGrid";
 function App() {
   return (
     <div className="App">
-     <h1>Welcome Space Lovers! 🚀 👽 👾</h1>
+     <h1>Welcome Space Lovers! <span>🚀 👽 👾</span></h1>
      {/* <NasaGrid />  */}
     </div>
   );
