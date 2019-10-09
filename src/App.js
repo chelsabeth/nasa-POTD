@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
      <h1>Welcome Space Lovers! <span>🚀 👽 👾</span></h1>
-     {/* <NasaGrid />  */}
+     <NasaGrid /> 
     </div>
   );
 }

@@ -9,7 +9,7 @@ export default function NasaGrid() {
     
     useEffect(() => {
         axios 
-            .get("https://api.nasa.gov/planetary/apod?api_key=fuq0ZlfvxAlFwRD3BQAs9KcODHjpWV4KKV0BJMj7")
+            .get(`https://api.nasa.gov/planetary/apod?api_key=7jlU6cDiCcGyWMIEdqTnf5eisNjkqEOSFsgXTUnO`)
             .then(response => {
                 console.log("Response from nasa data", response.data);
                 setData(response.data);
@@ -18,4 +18,5 @@ export default function NasaGrid() {
                 console.log("Sorry, an error has occured", error);
             });
     }, []);
+    return null;
 }
