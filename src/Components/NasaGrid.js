@@ -10,7 +10,7 @@ export default function NasaGrid() {
   useEffect(() => {
     axios
       .get(
-        `https://api.nasa.gov/planetary/apod?api_key=7jlU6cDiCcGyWMIEdqTnf5eisNjkqEOSFsgXTUnO`
+        `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2012-03-14`
       )
       .then(response => {
         console.log("Response from nasa data", response.data);
@@ -25,9 +25,10 @@ export default function NasaGrid() {
     <NasaCard
       key={data.index}
       title={data.title}
-      img={data.hdurl}
+      imgUrl={data.hdurl}
       date={data.date}
       description={data.explanation}
+      photographer={data.copyright}
     />
   );
 }
