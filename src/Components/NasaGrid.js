@@ -26,7 +26,6 @@ export default function NasaGrid() {
       key={data.index}
       title={data.title}
       img={data.hdurl}
-    //   copyright={data.copyright}
       date={data.date}
       description={data.explanation}
     />
